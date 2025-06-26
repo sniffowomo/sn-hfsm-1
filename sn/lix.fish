@@ -32,8 +32,11 @@ echo "artem = Image to color ascii"
 echo "bat = cat alternative"
 echo "lolcrab = Rainbow text generator"
 echo "bottom = Alternative to btop in rust"
+echo "du-dust = du-dust alternative"
+echo "tokei = Token counter"
+echo "quagga = Token Counter based on tokei"
 
-cargo install eza fd-find starship ripgrep cfonts artem bat lolcrab image-to-ascii bottom
+cargo install eza fd-find starship ripgrep cfonts artem bat lolcrab image-to-ascii bottom du-dust tokei quagga
 
 # Starship init and preset
 echo "starship init fish | source" >~/.config/fish/config.fish
