@@ -1,0 +1,21 @@
+{
+  "servers": {
+    "hf-mcp-server": {
+      "url": "https://huggingface.co/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:HF}"
+      }
+    },
+    "exa": {
+      "command": "bunx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "exa",
+        "--key",
+        "14f11b27-3815-4d86-9725-8ebc1451b21d"
+      ]
+    }
+  }
+}

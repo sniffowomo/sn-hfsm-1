@@ -1,0 +1,97 @@
+COCOMO (Constructive Cost Model) CLI utility and library
+
+<https://crates.io/crates/cocomo> / <https://github.com/qtfkwk/cocomo>
+
+See also: <https://en.wikipedia.org/wiki/COCOMO>
+
+---
+
+Usage: cocomo [OPTIONS] [PATH]...
+
+Arguments:
+  [PATH]...
+          Files / Directories
+          
+          [default: .]
+
+Options:
+      --sloc <N>
+          Source lines of code [default: *calculate from Files / Directories
+          argument(s)*]
+
+      --average-wage <f64>
+          Average Wage
+          
+          [default: 56286.0]
+
+      --inflation-multiplier <f64>
+          Inflation multiplier
+          
+          [default: 1.0]
+
+      --inflation-year <usize>
+          Inflation year (1995-2024) [default: 1995]
+
+      --overhead <f64>
+          Overhead
+          
+          [default: 2.4]
+
+      --eaf <f64>
+          Effort Adjustment Factor (EAF); typically 0.9 - 1.4
+          
+          [default: 1.0]
+
+      --project-type <TYPE>
+          Project type (organic: "--custom 2.4,1.05,0.38", embedded: "--custom
+          3.6,1.20,0.32", semi-detached: "--custom 3.0,1.12,0.35")
+          
+          [default: organic]
+
+          Possible values:
+          - embedded:      A software project with requiring the highest level
+            of complexity, creativity, and experience requirement fall under
+            this category. Such software requires a larger team size than the
+            other two models and also the developers need to be sufficiently
+            experienced and creative to develop such complex models. Equivalent
+            to: `--custom 3.6,1.20,0.32`
+          - organic:       A software project is said to be an organic type if
+            the team size required is adequately small, the problem is well
+            understood and has been solved in the past and also the team members
+            have a nominal experience regarding the problem. Equivalent to
+            `--custom 2.4,1.05,0.38`
+          - semi-detached: A software project is said to be a Semi-detached type
+            if the vital characteristics such as team-size, experience,
+            knowledge of the various programming environment lie in between that
+            of organic and Embedded. The projects classified as Semi-Detached
+            are comparatively less familiar and difficult to develop compared to
+            the organic ones and require more experience and better guidance and
+            creativity. Eg: Compilers or different Embedded Systems can be
+            considered of Semi-Detached type. Equivalent to `--custom
+            3.0,1.12,0.35`
+
+      --custom <f64,f64,f64>
+          Custom parameters (a, b, c) [default: "2.4,1.05,0.38" ("--project-type
+          organic")]
+
+      --development-time <f64>
+          Development time (d)
+          
+          [default: 2.5]
+
+      --currency-symbol <STRING>
+          Currency symbol
+          
+          [default: $]
+
+  -o, --output-format <FORMAT>
+          Output format
+          
+          [default: markdown-table]
+          [possible values: markdown-table, sloccount, sloccount-inflation]
+
+  -h, --help
+          Print help (see a summary with '-h')
+
+  -V, --version
+          Print version

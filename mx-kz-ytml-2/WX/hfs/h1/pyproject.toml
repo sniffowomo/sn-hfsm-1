@@ -1,0 +1,13 @@
+[project]
+name = "h1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "gradio[mcp]>=5.34.1",
+    "groq>=0.28.0",
+    "rich>=14.0.0",
+    "smolagents[toolkit]>=1.18.0",
+]

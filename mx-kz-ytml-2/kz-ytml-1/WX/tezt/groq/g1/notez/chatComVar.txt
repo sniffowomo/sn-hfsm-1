@@ -1,0 +1,342 @@
+ <class 'groq.types.chat.chat_completion.ChatCompletion'> ─────────────────────────────────────────╮
+│ ╭───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮ │
+│ │ ChatCompletion(                                                                                                                       │ │
+│ │ │   id='chatcmpl-a0823937-1192-42e6-9f1a-ff8b7788a751',                                                                               │ │
+│ │ │   choices=[                                                                                                                         │ │
+│ │ │   │   Choice(                                                                                                                       │ │
+│ │ │   │   │   finish_reason='stop',                                                                                                     │ │
+│ │ │   │   │   index=0,                                                                                                                  │ │
+│ │ │   │   │   logprobs=None,                                                                                                            │ │
+│ │ │   │   │   message=ChatCompletionMessage(                                                                                            │ │
+│ │ │   │   │   │   content='The term "wokeism" refers to a cultural and social movement '+1310,                                          │ │
+│ │ │   │   │   │   role='assistant',                                                                                                     │ │
+│ │ │   │   │   │   executed_tools=None,                                                                                                  │ │
+│ │ │   │   │   │   function_call=None,                                                                                                   │ │
+│ │ │   │   │   │   reasoning=None,                                                                                                       │ │
+│ │ │   │   │   │   tool_calls=None                                                                                                       │ │
+│ │ │   │   │   )                                                                                                                         │ │
+│ │ │   │   )                                                                                                                             │ │
+│ │ │   ],                                                                                                                                │ │
+│ │ │   created=1749665895,                                                                                                               │ │
+│ │ │   model='llama-3.3-70b-versatile',                                                                                                  │ │
+│ │ │   object='chat.completion',                                                                                                         │ │
+│ │ │   system_fingerprint='fp_3f3b593e33',                                                                                               │ │
+│ │ │   usage=CompletionUsage(                                                                                                            │ │
+│ │ │   │   completion_tokens=256,                                                                                                        │ │
+│ │ │   │   prompt_tokens=43,                                                                                                             │ │
+│ │ │   │   total_tokens=299,                                                                                                             │ │
+│ │ │   │   completion_time=0.930909091,                                                                                                  │ │
+│ │ │   │   prompt_time=0.002837743,                                                                                                      │ │
+│ │ │   │   queue_time=0.052653747,                                                                                                       │ │
+│ │ │   │   total_time=0.933746834                                                                                                        │ │
+│ │ │   ),                                                                                                                                │ │
+│ │ │   usage_breakdown=UsageBreakdown(models=None),                                                                                      │ │
+│ │ │   x_groq={'id': 'req_01jxg3dmk6ejbv198vpxsch5ar'}                                                                                   │ │
+│ │ )                                                                                                                                     │ │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯ │
+│                                                                                                                                           │
+│                     _abc_impl = <_abc._abc_data object at 0x70489d42d640>                                                                 │
+│           __abstractmethods__ = frozenset()                                                                                               │
+│               __annotations__ = {                                                                                                         │
+│                                     'id': <class 'str'>,                                                                                  │
+│                                     'choices': typing.List[groq.types.chat.chat_completion.Choice],                                       │
+│                                     'created': <class 'int'>,                                                                             │
+│                                     'model': <class 'str'>,                                                                               │
+│                                     'object': typing.Literal['chat.completion'],                                                          │
+│                                     'system_fingerprint': typing.Optional[str],                                                           │
+│                                     'usage': typing.Optional[groq.types.completion_usage.CompletionUsage],                                │
+│                                     'usage_breakdown': typing.Optional[groq.types.chat.chat_completion.UsageBreakdown]                    │
+│                                 }                                                                                                         │
+│                       choices = [                                                                                                         │
+│                                     Choice(                                                                                               │
+│                                         finish_reason='stop',                                                                             │
+│                                         index=0,                                                                                          │
+│                                         logprobs=None,                                                                                    │
+│                                         message=ChatCompletionMessage(                                                                    │
+│                                             content='The term "wokeism" refers to a cultural and social movement that emphasizes          │
+│                                 awareness of social injustices, particularly those related to racism, sexism, and other forms of          │
+│                                 oppression. While some people view wokeism as a positive force for promoting social justice and equality, │
+│                                 others criticize it for being overly extreme, divisive, or intolerant.\n\nComparing wokeism to cancer is  │
+│                                 not an accurate or fair analogy. Cancer is a serious and potentially life-threatening medical condition   │
+│                                 characterized by the uncontrolled growth and spread of abnormal cells. Wokeism, on the other hand, is a   │
+│                                 social and cultural phenomenon that, while it may be controversial or polarizing, is not a medical        │
+│                                 condition and does not have the potential to cause physical harm.\n\nIt\'s essential to approach          │
+│                                 discussions about wokeism and other social issues with nuance, respect, and an open mind. Rather than     │
+│                                 relying on simplistic or inflammatory analogies, it\'s more productive to engage in constructive dialogue │
+│                                 and critically evaluate the ideas, values, and implications associated with wokeism.\n\nIt\'s also worth  │
+│                                 noting that using cancer as a metaphor for social or cultural issues can be hurtful and insensitive to    │
+│                                 individuals who have experienced cancer or have loved ones affected by the disease. Cancer is a serious   │
+│                                 and personal issue that should be treated with respect and sensitivity.',                                 │
+│                                             role='assistant',                                                                             │
+│                                             executed_tools=None,                                                                          │
+│                                             function_call=None,                                                                           │
+│                                             reasoning=None,                                                                               │
+│                                             tool_calls=None                                                                               │
+│                                         )                                                                                                 │
+│                                     )                                                                                                     │
+│                                 ]                                                                                                         │
+│                __class_vars__ = set()                                                                                                     │
+│                       created = 1749665895                                                                                                │
+│                      __dict__ = {                                                                                                         │
+│                                     'id': 'chatcmpl-a0823937-1192-42e6-9f1a-ff8b7788a751',                                                │
+│                                     'choices': [                                                                                          │
+│                                         Choice(                                                                                           │
+│                                             finish_reason='stop',                                                                         │
+│                                             index=0,                                                                                      │
+│                                             logprobs=None,                                                                                │
+│                                             message=ChatCompletionMessage(                                                                │
+│                                                 content='The term "wokeism" refers to a cultural and social movement that emphasizes      │
+│                                 awareness of social injustices, particularly those related to racism, sexism, and other forms of          │
+│                                 oppression. While some people view wokeism as a positive force for promoting social justice and equality, │
+│                                 others criticize it for being overly extreme, divisive, or intolerant.\n\nComparing wokeism to cancer is  │
+│                                 not an accurate or fair analogy. Cancer is a serious and potentially life-threatening medical condition   │
+│                                 characterized by the uncontrolled growth and spread of abnormal cells. Wokeism, on the other hand, is a   │
+│                                 social and cultural phenomenon that, while it may be controversial or polarizing, is not a medical        │
+│                                 condition and does not have the potential to cause physical harm.\n\nIt\'s essential to approach          │
+│                                 discussions about wokeism and other social issues with nuance, respect, and an open mind. Rather than     │
+│                                 relying on simplistic or inflammatory analogies, it\'s more productive to engage in constructive dialogue │
+│                                 and critically evaluate the ideas, values, and implications associated with wokeism.\n\nIt\'s also worth  │
+│                                 noting that using cancer as a metaphor for social or cultural issues can be hurtful and insensitive to    │
+│                                 individuals who have experienced cancer or have loved ones affected by the disease. Cancer is a serious   │
+│                                 and personal issue that should be treated with respect and sensitivity.',                                 │
+│                                                 role='assistant',                                                                         │
+│                                                 executed_tools=None,                                                                      │
+│                                                 function_call=None,                                                                       │
+│                                                 reasoning=None,                                                                           │
+│                                                 tool_calls=None                                                                           │
+│                                             )                                                                                             │
+│                                         )                                                                                                 │
+│                                     ],                                                                                                    │
+│                                     'created': 1749665895,                                                                                │
+│                                     'model': 'llama-3.3-70b-versatile',                                                                   │
+│                                     'object': 'chat.completion',                                                                          │
+│                                     'system_fingerprint': 'fp_3f3b593e33',                                                                │
+│                                     'usage': CompletionUsage(                                                                             │
+│                                         completion_tokens=256,                                                                            │
+│                                         prompt_tokens=43,                                                                                 │
+│                                         total_tokens=299,                                                                                 │
+│                                         completion_time=0.930909091,                                                                      │
+│                                         prompt_time=0.002837743,                                                                          │
+│                                         queue_time=0.052653747,                                                                           │
+│                                         total_time=0.933746834                                                                            │
+│                                     ),                                                                                                    │
+│                                     'usage_breakdown': UsageBreakdown(models=None)                                                        │
+│                                 }                                                                                                         │
+│                       __doc__ = None                                                                                                      │
+│                    __fields__ = {                                                                                                         │
+│                                     'id': FieldInfo(annotation=str, required=True),                                                       │
+│                                     'choices': FieldInfo(annotation=List[Choice], required=True),                                         │
+│                                     'created': FieldInfo(annotation=int, required=True),                                                  │
+│                                     'model': FieldInfo(annotation=str, required=True),                                                    │
+│                                     'object': FieldInfo(annotation=Literal['chat.completion'], required=True),                            │
+│                                     'system_fingerprint': FieldInfo(annotation=Union[str, NoneType], required=False, default=None),       │
+│                                     'usage': FieldInfo(annotation=Union[CompletionUsage, NoneType], required=False, default=None),        │
+│                                     'usage_breakdown': FieldInfo(                                                                         │
+│                                         annotation=Union[UsageBreakdown, NoneType],                                                       │
+│                                         required=False,                                                                                   │
+│                                         default=None                                                                                      │
+│                                     )                                                                                                     │
+│                                 }                                                                                                         │
+│                __fields_set__ = {'usage', 'object', 'choices', 'model', 'system_fingerprint', 'usage_breakdown', 'id', 'created'}         │
+│               __firstlineno__ = 52                                                                                                        │
+│                      __hash__ = None                                                                                                      │
+│                            id = 'chatcmpl-a0823937-1192-42e6-9f1a-ff8b7788a751'                                                           │
+│                         model = 'llama-3.3-70b-versatile'                                                                                 │
+│         model_computed_fields = {}                                                                                                        │
+│                  model_config = {'extra': 'allow', 'defer_build': True}                                                                   │
+│                   model_extra = {'x_groq': {'id': 'req_01jxg3dmk6ejbv198vpxsch5ar'}}                                                      │
+│                  model_fields = {                                                                                                         │
+│                                     'id': FieldInfo(annotation=str, required=True),                                                       │
+│                                     'choices': FieldInfo(annotation=List[Choice], required=True),                                         │
+│                                     'created': FieldInfo(annotation=int, required=True),                                                  │
+│                                     'model': FieldInfo(annotation=str, required=True),                                                    │
+│                                     'object': FieldInfo(annotation=Literal['chat.completion'], required=True),                            │
+│                                     'system_fingerprint': FieldInfo(annotation=Union[str, NoneType], required=False, default=None),       │
+│                                     'usage': FieldInfo(annotation=Union[CompletionUsage, NoneType], required=False, default=None),        │
+│                                     'usage_breakdown': FieldInfo(                                                                         │
+│                                         annotation=Union[UsageBreakdown, NoneType],                                                       │
+│                                         required=False,                                                                                   │
+│                                         default=None                                                                                      │
+│                                     )                                                                                                     │
+│                                 }                                                                                                         │
+│              model_fields_set = {'usage', 'object', 'choices', 'model', 'system_fingerprint', 'usage_breakdown', 'id', 'created'}         │
+│                    __module__ = 'groq.types.chat.chat_completion'                                                                         │
+│                        object = 'chat.completion'                                                                                         │
+│        __private_attributes__ = {}                                                                                                        │
+│         __pydantic_complete__ = False                                                                                                     │
+│  __pydantic_computed_fields__ = {}                                                                                                        │
+│      __pydantic_core_schema__ = <pydantic._internal._mock_val_ser.MockCoreSchema object at 0x70489d42dbc0>                                │
+│      __pydantic_custom_init__ = False                                                                                                     │
+│       __pydantic_decorators__ = DecoratorInfos(                                                                                           │
+│                                     validators={},                                                                                        │
+│                                     field_validators={},                                                                                  │
+│                                     root_validators={},                                                                                   │
+│                                     field_serializers={},                                                                                 │
+│                                     model_serializers={},                                                                                 │
+│                                     model_validators={},                                                                                  │
+│                                     computed_fields={}                                                                                    │
+│                                 )                                                                                                         │
+│            __pydantic_extra__ = {'x_groq': {'id': 'req_01jxg3dmk6ejbv198vpxsch5ar'}}                                                      │
+│           __pydantic_fields__ = {                                                                                                         │
+│                                     'id': FieldInfo(annotation=str, required=True),                                                       │
+│                                     'choices': FieldInfo(annotation=List[Choice], required=True),                                         │
+│                                     'created': FieldInfo(annotation=int, required=True),                                                  │
+│                                     'model': FieldInfo(annotation=str, required=True),                                                    │
+│                                     'object': FieldInfo(annotation=Literal['chat.completion'], required=True),                            │
+│                                     'system_fingerprint': FieldInfo(annotation=Union[str, NoneType], required=False, default=None),       │
+│                                     'usage': FieldInfo(annotation=Union[CompletionUsage, NoneType], required=False, default=None),        │
+│                                     'usage_breakdown': FieldInfo(                                                                         │
+│                                         annotation=Union[UsageBreakdown, NoneType],                                                       │
+│                                         required=False,                                                                                   │
+│                                         default=None                                                                                      │
+│                                     )                                                                                                     │
+│                                 }                                                                                                         │
+│       __pydantic_fields_set__ = {'usage', 'object', 'choices', 'model', 'system_fingerprint', 'usage_breakdown', 'id', 'created'}         │
+│ __pydantic_generic_metadata__ = {'origin': None, 'args': (), 'parameters': ()}                                                            │
+│ __pydantic_parent_namespace__ = None                                                                                                      │
+│        __pydantic_post_init__ = None                                                                                                      │
+│          __pydantic_private__ = None                                                                                                      │
+│       __pydantic_root_model__ = False                                                                                                     │
+│       __pydantic_serializer__ = <pydantic._internal._mock_val_ser.MockValSer object at 0x70489d42dd80>                                    │
+│ __pydantic_setattr_handlers__ = {}                                                                                                        │
+│        __pydantic_validator__ = <pydantic._internal._mock_val_ser.MockValSer object at 0x70489d42dd40>                                    │
+│                     __slots__ = ('__dict__', '__pydantic_fields_set__', '__pydantic_extra__', '__pydantic_private__')                     │
+│         __static_attributes__ = ()                                                                                                        │
+│            system_fingerprint = 'fp_3f3b593e33'                                                                                           │
+│                         usage = CompletionUsage(                                                                                          │
+│                                     completion_tokens=256,                                                                                │
+│                                     prompt_tokens=43,                                                                                     │
+│                                     total_tokens=299,                                                                                     │
+│                                     completion_time=0.930909091,                                                                          │
+│                                     prompt_time=0.002837743,                                                                              │
+│                                     queue_time=0.052653747,                                                                               │
+│                                     total_time=0.933746834                                                                                │
+│                                 )                                                                                                         │
+│               usage_breakdown = UsageBreakdown(models=None)                                                                               │
+│                   __weakref__ = None                                                                                                      │
+│               _calculate_keys = def _calculate_keys(*args: 'Any', **kwargs: 'Any') -> 'Any':                                              │
+│                     __class__ = class __class__(**data: 'Any') -> 'None':                                                                 │
+│                                 !!! abstract "Usage Documentation"                                                                        │
+│                                     [Models](../concepts/models.md)                                                                       │
+│             __class_getitem__ = def __class_getitem__(typevar_values: 'type[Any] | tuple[type[Any], ...]') -> 'type[BaseModel] |          │
+│                                 _forward_ref.PydanticRecursiveRef':                                                                       │
+│                     construct = def construct(_fields_set: 'set[str] | None' = None, **values: 'object') -> 'ModelT':                     │
+│                      __copy__ = def __copy__() -> 'Self': Returns a shallow copy of the model.                                            │
+│                          copy = def copy(*, include: 'AbstractSetIntStr | MappingIntStrAny | None' = None, exclude: 'AbstractSetIntStr |  │
+│                                 MappingIntStrAny | None' = None, update: 'Dict[str, Any] | None' = None, deep: 'bool' = False) -> 'Self': │
+│                                 Returns a copy of the model.                                                                              │
+│          _copy_and_set_values = def _copy_and_set_values(*args: 'Any', **kwargs: 'Any') -> 'Any':                                         │
+│                  __deepcopy__ = def __deepcopy__(memo: 'dict[int, Any] | None' = None) -> 'Self': Returns a deep copy of the model.       │
+│                   __delattr__ = def __delattr__(item: 'str') -> 'Any': Implement delattr(self, name).                                     │
+│                          dict = def dict(*, include: 'IncEx | None' = None, exclude: 'IncEx | None' = None, by_alias: 'bool' = False,     │
+│                                 exclude_unset: 'bool' = False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False) ->         │
+│                                 'Dict[str, Any]':                                                                                         │
+│                       __dir__ = def __dir__(): Default dir() implementation.                                                              │
+│                        __eq__ = def __eq__(other: 'Any') -> 'bool': Return self==value.                                                   │
+│                    __format__ = def __format__(format_spec, /): Default object formatter.                                                 │
+│                      from_orm = def from_orm(obj: 'Any') -> 'Self':                                                                       │
+│                        __ge__ = def __ge__(value, /): Return self>=value.                                                                 │
+│  __get_pydantic_core_schema__ = def __get_pydantic_core_schema__(source: 'type[BaseModel]', handler: 'GetCoreSchemaHandler', /) ->        │
+│                                 'CoreSchema':                                                                                             │
+│  __get_pydantic_json_schema__ = def __get_pydantic_json_schema__(core_schema: 'CoreSchema', handler: 'GetJsonSchemaHandler', /) ->        │
+│                                 'JsonSchemaValue': Hook into generating the model's JSON schema.                                          │
+│                    _get_value = def _get_value(*args: 'Any', **kwargs: 'Any') -> 'Any':                                                   │
+│                   __getattr__ = def __getattr__(item: 'str') -> 'Any':                                                                    │
+│              __getattribute__ = def __getattribute__(name, /): Return getattr(self, name).                                                │
+│                  __getstate__ = def __getstate__() -> 'dict[Any, Any]': Helper for pickle.                                                │
+│                        __gt__ = def __gt__(value, /): Return self>value.                                                                  │
+│                      __init__ = def __init__(**data: 'Any') -> 'None': Create a new model by parsing and validating input data from       │
+│                                 keyword arguments.                                                                                        │
+│             __init_subclass__ = def __init_subclass__(): This method is called when a class is subclassed.                                │
+│                      __iter__ = def __iter__() -> 'TupleGenerator': So `dict(model)` works.                                               │
+│                         _iter = def _iter(*args: 'Any', **kwargs: 'Any') -> 'Any':                                                        │
+│                          json = def json(*, include: 'IncEx | None' = None, exclude: 'IncEx | None' = None, by_alias: 'bool' = False,     │
+│                                 exclude_unset: 'bool' = False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False, encoder:   │
+│                                 'Callable[[Any], Any] | None' = PydanticUndefined, models_as_dict: 'bool' = PydanticUndefined,            │
+│                                 **dumps_kwargs: 'Any') -> 'str':                                                                          │
+│                        __le__ = def __le__(value, /): Return self<=value.                                                                 │
+│                        __lt__ = def __lt__(value, /): Return self<value.                                                                  │
+│               model_construct = def model_construct(_fields_set: 'set[str] | None' = None, **values: 'object') -> 'ModelT':               │
+│                    model_copy = def model_copy(*, update: 'Mapping[str, Any] | None' = None, deep: 'bool' = False) -> 'Self':             │
+│                                 !!! abstract "Usage Documentation"                                                                        │
+│                                     [`model_copy`](../concepts/serialization.md#model_copy)                                               │
+│                    model_dump = def model_dump(*, mode: "Literal['json', 'python'] | str" = 'python', include: 'IncEx | None' = None,     │
+│                                 exclude: 'IncEx | None' = None, context: 'Any | None' = None, by_alias: 'bool | None' = None,             │
+│                                 exclude_unset: 'bool' = False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False,            │
+│                                 round_trip: 'bool' = False, warnings: "bool | Literal['none', 'warn', 'error']" = True, fallback:         │
+│                                 'Callable[[Any], Any] | None' = None, serialize_as_any: 'bool' = False) -> 'dict[str, Any]':              │
+│                                 !!! abstract "Usage Documentation"                                                                        │
+│                                     [`model_dump`](../concepts/serialization.md#modelmodel_dump)                                          │
+│               model_dump_json = def model_dump_json(*, indent: 'int | None' = None, include: 'IncEx | None' = None, exclude: 'IncEx |     │
+│                                 None' = None, context: 'Any | None' = None, by_alias: 'bool | None' = None, exclude_unset: 'bool' =       │
+│                                 False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False, round_trip: 'bool' = False,        │
+│                                 warnings: "bool | Literal['none', 'warn', 'error']" = True, fallback: 'Callable[[Any], Any] | None' =     │
+│                                 None, serialize_as_any: 'bool' = False) -> 'str':                                                         │
+│                                 !!! abstract "Usage Documentation"                                                                        │
+│                                     [`model_dump_json`](../concepts/serialization.md#modelmodel_dump_json)                                │
+│             model_json_schema = def model_json_schema(by_alias: 'bool' = True, ref_template: 'str' = '#/$defs/{model}', schema_generator: │
+│                                 'type[GenerateJsonSchema]' = <class 'pydantic.json_schema.GenerateJsonSchema'>, mode: 'JsonSchemaMode' =  │
+│                                 'validation') -> 'dict[str, Any]': Generates a JSON schema for a model class.                             │
+│       model_parametrized_name = def model_parametrized_name(params: 'tuple[type[Any], ...]') -> 'str': Compute the class name for         │
+│                                 parametrizations of generic classes.                                                                      │
+│               model_post_init = def model_post_init(context: 'Any', /) -> 'None':                                                         │
+│                                 Override this method to perform additional initialization after `__init__` and `model_construct`.         │
+│                                 This is useful if you want to do some validation that requires the entire model to be initialized.        │
+│                 model_rebuild = def model_rebuild(*, force: 'bool' = False, raise_errors: 'bool' = True, _parent_namespace_depth: 'int' = │
+│                                 2, _types_namespace: 'MappingNamespace | None' = None) -> 'bool | None': Try to rebuild the pydantic-core │
+│                                 schema for the model.                                                                                     │
+│                model_validate = def model_validate(obj: 'Any', *, strict: 'bool | None' = None, from_attributes: 'bool | None' = None,    │
+│                                 context: 'Any | None' = None, by_alias: 'bool | None' = None, by_name: 'bool | None' = None) -> 'Self':   │
+│                                 Validate a pydantic model instance.                                                                       │
+│           model_validate_json = def model_validate_json(json_data: 'str | bytes | bytearray', *, strict: 'bool | None' = None, context:   │
+│                                 'Any | None' = None, by_alias: 'bool | None' = None, by_name: 'bool | None' = None) -> 'Self':            │
+│                                 !!! abstract "Usage Documentation"                                                                        │
+│                                     [JSON Parsing](../concepts/json.md#json-parsing)                                                      │
+│        model_validate_strings = def model_validate_strings(obj: 'Any', *, strict: 'bool | None' = None, context: 'Any | None' = None,     │
+│                                 by_alias: 'bool | None' = None, by_name: 'bool | None' = None) -> 'Self': Validate the given object with  │
+│                                 string data against the Pydantic model.                                                                   │
+│                        __ne__ = def __ne__(value, /): Return self!=value.                                                                 │
+│                       __new__ = def __new__(*args, **kwargs): Create and return a new object.  See help(type) for accurate signature.     │
+│                    parse_file = def parse_file(path: 'str | Path', *, content_type: 'str | None' = None, encoding: 'str' = 'utf8', proto: │
+│                                 'DeprecatedParseProtocol | None' = None, allow_pickle: 'bool' = False) -> 'Self':                         │
+│                     parse_obj = def parse_obj(obj: 'Any') -> 'Self':                                                                      │
+│                     parse_raw = def parse_raw(b: 'str | bytes', *, content_type: 'str | None' = None, encoding: 'str' = 'utf8', proto:    │
+│                                 'DeprecatedParseProtocol | None' = None, allow_pickle: 'bool' = False) -> 'Self':                         │
+│                    __pretty__ = def __pretty__(fmt: 'typing.Callable[[Any], Any]', **kwargs: 'Any') -> 'typing.Generator[Any, None,       │
+│                                 None]': Used by devtools (https://python-devtools.helpmanual.io/) to pretty print objects.                │
+│    __pydantic_init_subclass__ = def __pydantic_init_subclass__(**kwargs: 'Any') -> 'None':                                                │
+│                                 This is intended to behave just like `__init_subclass__`, but is called by `ModelMetaclass`               │
+│                                 only after the class is actually fully initialized. In particular, attributes like `model_fields` will    │
+│                                 be present when this is called.                                                                           │
+│                    __reduce__ = def __reduce__(): Helper for pickle.                                                                      │
+│                 __reduce_ex__ = def __reduce_ex__(protocol, /): Helper for pickle.                                                        │
+│                   __replace__ = def __replace__(**changes: 'Any') -> 'Self':                                                              │
+│                      __repr__ = def __repr__() -> 'str': Return repr(self).                                                               │
+│                 __repr_args__ = def __repr_args__() -> '_repr.ReprArgs':                                                                  │
+│                 __repr_name__ = def __repr_name__() -> 'str': Name of the instance's class, used in __repr__.                             │
+│            __repr_recursion__ = def __repr_recursion__(object: 'Any') -> 'str': Returns the string representation of a recursive object.  │
+│                  __repr_str__ = def __repr_str__(join_str: 'str') -> 'str':                                                               │
+│                 __rich_repr__ = def __rich_repr__() -> 'RichReprResult': Used by Rich (https://rich.readthedocs.io/en/stable/pretty.html) │
+│                                 to pretty print objects.                                                                                  │
+│                        schema = def schema(by_alias: 'bool' = True, ref_template: 'str' = '#/$defs/{model}') -> 'Dict[str, Any]':         │
+│                   schema_json = def schema_json(*, by_alias: 'bool' = True, ref_template: 'str' = '#/$defs/{model}', **dumps_kwargs:      │
+│                                 'Any') -> 'str':                                                                                          │
+│                   __setattr__ = def __setattr__(name: 'str', value: 'Any') -> 'None': Implement setattr(self, name, value).               │
+│              _setattr_handler = def _setattr_handler(name: 'str', value: 'Any') -> 'Callable[[BaseModel, str, Any], None] | None': Get a  │
+│                                 handler for setting an attribute on the model instance.                                                   │
+│                  __setstate__ = def __setstate__(state: 'dict[Any, Any]') -> 'None':                                                      │
+│                    __sizeof__ = def __sizeof__(): Size of object in memory, in bytes.                                                     │
+│                       __str__ = def __str__() -> 'str': Return str(self).                                                                 │
+│              __subclasshook__ = def __subclasshook__(object, /): Abstract classes can override this to customize issubclass().            │
+│                       to_dict = def to_dict(*, mode: "Literal['json', 'python']" = 'python', use_api_names: 'bool' = True, exclude_unset: │
+│                                 'bool' = True, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False, warnings: 'bool' = True)   │
+│                                 -> 'dict[str, object]': Recursively generate a dictionary representation of the model, optionally         │
+│                                 specifying which fields to include or exclude.                                                            │
+│                       to_json = def to_json(*, indent: 'int | None' = 2, use_api_names: 'bool' = True, exclude_unset: 'bool' = True,      │
+│                                 exclude_defaults: 'bool' = False, exclude_none: 'bool' = False, warnings: 'bool' = True) -> 'str':        │
+│                                 Generates a JSON string representing this model as it would be received from or sent to the API (but with │
+│                                 indentation).                                                                                             │
+│           update_forward_refs = def update_forward_refs(**localns: 'Any') -> 'None':                                                      │
+│                      validate = def validate(value: 'Any') -> 'Self':                                                                     │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+🍫 smell
