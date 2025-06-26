@@ -1,0 +1,11 @@
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+Welcome to snips.sh! 👋
+Please take a moment to read our terms of service.
+🔗 https://snips.sh/docs/terms-of-service.md
+┃ File Uploaded 📤                            
+┃ id: rYUPL-br5R                              
+┃ size: 33 kB • type: csv • visibility: public
+┃ SSH 📠                   
+┃ ssh f:rYUPL-br5R@snips.sh
+┃ URL 🔗                       
+┃ https://snips.sh/f/rYUPL-br5R

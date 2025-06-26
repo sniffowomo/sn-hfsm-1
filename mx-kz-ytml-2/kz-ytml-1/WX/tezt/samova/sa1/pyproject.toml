@@ -1,0 +1,13 @@
+[project]
+name = "sa1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "httpx>=0.28.1",
+    "litellm>=1.72.4",
+    "openai>=1.86.0",
+    "rich>=14.0.0",
+]

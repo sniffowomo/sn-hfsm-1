@@ -1,0 +1,12 @@
+[project]
+name = "g1"
+version = "0.1.0"
+description = "Gorqa Testing Onez"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+ "groq>=0.26.0",
+ "pillow>=11.2.1",
+ "rich>=14.0.0",
+]

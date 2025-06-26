@@ -1,0 +1,15 @@
+[project]
+name = "tu1"
+version = "0.0.1"
+description = "ytdlst"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "gradio[mcp]>=5.34.1",
+    "groq>=0.28.0",
+    "huggingface-hub>=0.33.0",
+    "matplotlib>=3.10.3",
+    "rich>=14.0.0",
+    "smolagents[litellm,toolkit]>=1.18.0",
+]

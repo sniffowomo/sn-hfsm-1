@@ -1,0 +1,16 @@
+- DeepSeek-R1-0528
+- DeepSeek-R1-Distill-Llama-70B
+- DeepSeek-V3-0324
+- E5-Mistral-7B-Instruct
+- Llama-4-Maverick-17B-128E-Instruct
+- Llama-4-Scout-17B-16E-Instruct
+- Meta-Llama-3.1-405B-Instruct
+- Meta-Llama-3.1-8B-Instruct
+- Meta-Llama-3.2-1B-Instruct
+- Meta-Llama-3.2-3B-Instruct
+- Meta-Llama-3.3-70B-Instruct
+- Meta-Llama-Guard-3-8B
+- QwQ-32B
+- Qwen2-Audio-7B-Instruct
+- Qwen3-32B
+- Whisper-Large-v3
