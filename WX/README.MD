@@ -1,12 +1,13 @@
 1. [WX](#wx)
-2. [Dirz](#dirz)
+2. [Dirza](#dirza)
 
 # WX
 
-1. Main folder for all the projects
+> Main folder for doing bootylicking
 
-# Dirz
+# Dirza
 
-|                         Dir                          |           What            |
-| :--------------------------------------------------: | :-----------------------: |
-| [`GCL`](https://github.com/google-gemini/gemini-cli) | Google gemini cli testing |
+|       Dir       |          What          |
+| :-------------: | :--------------------: |
+| [`gcc`](./gcc/) |   Gemini Cli Testing   |
+| [`hfx`](./hfx/) | HF SmolAgent LickSniff |

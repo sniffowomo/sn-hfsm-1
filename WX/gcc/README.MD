@@ -1,14 +1,12 @@
-1. [GCC](#gcc)
-2. [Installation](#installation)
+1. [WX](#wx)
+2. [Dirz](#dirz)
 
-# GCC
+# WX
 
-> Testing out Googel Gemini CLI
+1. Main folder for all the projects
 
-# Installation
+# Dirz
 
-https://github.com/google-gemini/gemini-cli
-
-```sh
-bun install -g @google/gemini-cli
-```
+|                         Dir                          |           What            |
+| :--------------------------------------------------: | :-----------------------: |
+| [`GCL`](https://github.com/google-gemini/gemini-cli) | Google gemini cli testing |
