@@ -16,4 +16,8 @@
 
 # Diraz
 
-1. These re the working
+1. These r the directories where you will do the actual booty smell
+
+|      Dirz      |          Wah          |
+| :------------: | :-------------------: |
+| [`ro1`](./ro1) | Testing making a site |
