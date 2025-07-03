@@ -129,7 +129,7 @@ body::before {
 }
 
 .glitch::after {
-  animation: glitch-2 0.5s infinite;
+  animation: glitch-2 1s infinite;
   color: var(--neon-green);
   z-index: -2;
 }

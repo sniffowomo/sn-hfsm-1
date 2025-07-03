@@ -43,7 +43,7 @@ const Experience = () => {
               key={index}
               className="timeline-item"
               variants={itemVariants}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1.01 }}
             >
               <div className="timeline-marker">
                 <div className="timeline-dot"></div>
