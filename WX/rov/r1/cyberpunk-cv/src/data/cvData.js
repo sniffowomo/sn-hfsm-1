@@ -1,7 +1,7 @@
 // CV Data - Easy to modify
 export const cvData = {
   personal: {
-    name: "Alex Chen",
+    name: "BootySmeller",
     title: "Full Stack Developer",
     subtitle: "Code Architect • Digital Innovator",
     email: "alex.chen@example.com",
