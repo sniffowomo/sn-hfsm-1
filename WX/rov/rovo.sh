@@ -40,6 +40,10 @@ rov_auth() {
     hea1 "Authenticaing RovoCli"
     co1="acli --help"
     co2="acli rovodev auth login"
+    echo -e "--- Executing ${co1} ---"
+    eval "${co1}"
+    echo -e "--- Executing ${co2} ---"
+    eval "${co2}"
 }
 
 # ////////////////////////////////////// UV Section //////////////////////////////////////
@@ -88,4 +92,5 @@ rm_venv_find() {
 # Execution
 # uv_gr
 # rm_venv_find
-rov_i
+# rov_i
+rov_auth
