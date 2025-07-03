@@ -1,6 +1,6 @@
 # Codign Agent Task
 
-2. The website in its current form is messed up. The website is made with bun and vite use that only
-3. The layout and formatting is off this needs to be fixed
-4. The animation effects need to be subtle
-5. A problem with the agents is that it gets stuck while running the command , if that happens think of another startegy
+1. The name of the person at the top is not clearly visible, fix that
+2. When in mobile mode , the name is also not visible properly
+
+> Sometimes when the agents executes bun run dev , it gets stuck , so add a timeour and alternative strategy
