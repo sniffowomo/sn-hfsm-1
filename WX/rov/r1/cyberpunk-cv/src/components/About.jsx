@@ -56,8 +56,8 @@ const About = () => {
               className="cyber-card skill-category"
               variants={skillVariants}
               whileHover={{ 
-                scale: 1.02,
-                boxShadow: "0 0 30px rgba(0, 255, 255, 0.5)"
+                scale: 1.01,
+                boxShadow: "0 0 20px rgba(0, 255, 255, 0.3)"
               }}
             >
               <h3 className="skill-category-title">{skillGroup.category}</h3>
@@ -76,9 +76,9 @@ const About = () => {
                       }
                     }}
                     whileHover={{ 
-                      scale: 1.1,
+                      scale: 1.05,
                       color: '#00ffff',
-                      textShadow: '0 0 10px #00ffff'
+                      textShadow: '0 0 5px #00ffff'
                     }}
                     viewport={{ once: true }}
                   >

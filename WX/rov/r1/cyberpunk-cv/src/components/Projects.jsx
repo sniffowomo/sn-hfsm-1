@@ -44,9 +44,8 @@ const Projects = () => {
               className="cyber-card project-card"
               variants={itemVariants}
               whileHover={{ 
-                scale: 1.05,
-                rotateY: 5,
-                boxShadow: '0 0 40px rgba(128, 0, 255, 0.6)'
+                scale: 1.02,
+                boxShadow: '0 0 25px rgba(128, 0, 255, 0.4)'
               }}
               whileTap={{ scale: 0.98 }}
             >
@@ -57,8 +56,8 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project-link"
-                  whileHover={{ scale: 1.2, color: '#00ffff' }}
-                  whileTap={{ scale: 0.9 }}
+                  whileHover={{ scale: 1.1, color: '#00ffff' }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <ExternalLink size={20} />
                 </motion.a>
@@ -83,8 +82,8 @@ const Projects = () => {
                       }
                     }}
                     whileHover={{ 
-                      scale: 1.1,
-                      backgroundColor: 'rgba(0, 255, 255, 0.2)',
+                      scale: 1.05,
+                      backgroundColor: 'rgba(0, 255, 255, 0.1)',
                       color: '#00ffff'
                     }}
                     viewport={{ once: true }}

@@ -53,7 +53,7 @@ const Navigation = () => {
       <div className="nav-container">
         <motion.div
           className="nav-logo"
-          whileHover={{ scale: 1.1, color: '#00ffff' }}
+          whileHover={{ scale: 1.05, color: '#00ffff' }}
         >
           <span className="neon-text">AC</span>
         </motion.div>
@@ -65,8 +65,8 @@ const Navigation = () => {
               key={item.id}
               className={`nav-item ${activeSection === item.id ? 'active' : ''}`}
               onClick={() => scrollToSection(item.id)}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
             >
               {item.label}
             </motion.button>

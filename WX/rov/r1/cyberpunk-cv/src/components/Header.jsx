@@ -52,8 +52,8 @@ const Header = () => {
           <motion.a 
             href={`mailto:${personal.email}`}
             className="contact-item"
-            whileHover={{ scale: 1.05, color: '#00ffff' }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02, color: '#00ffff' }}
+            whileTap={{ scale: 0.98 }}
           >
             <Mail size={20} />
             <span>{personal.email}</span>
@@ -62,8 +62,8 @@ const Header = () => {
           <motion.a 
             href={`tel:${personal.phone}`}
             className="contact-item"
-            whileHover={{ scale: 1.05, color: '#00ffff' }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02, color: '#00ffff' }}
+            whileTap={{ scale: 0.98 }}
           >
             <Phone size={20} />
             <span>{personal.phone}</span>
@@ -71,7 +71,7 @@ const Header = () => {
           
           <motion.div 
             className="contact-item"
-            whileHover={{ scale: 1.05, color: '#00ffff' }}
+            whileHover={{ scale: 1.02, color: '#00ffff' }}
           >
             <MapPin size={20} />
             <span>{personal.location}</span>
@@ -82,8 +82,8 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="contact-item"
-            whileHover={{ scale: 1.05, color: '#00ffff' }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02, color: '#00ffff' }}
+            whileTap={{ scale: 0.98 }}
           >
             <Globe size={20} />
             <span>{personal.website}</span>
@@ -94,8 +94,8 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="contact-item"
-            whileHover={{ scale: 1.05, color: '#00ffff' }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02, color: '#00ffff' }}
+            whileTap={{ scale: 0.98 }}
           >
             <Github size={20} />
             <span>GitHub</span>
@@ -106,8 +106,8 @@ const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="contact-item"
-            whileHover={{ scale: 1.05, color: '#00ffff' }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02, color: '#00ffff' }}
+            whileTap={{ scale: 0.98 }}
           >
             <Linkedin size={20} />
             <span>LinkedIn</span>

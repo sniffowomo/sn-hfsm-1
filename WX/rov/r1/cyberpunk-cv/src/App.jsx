@@ -23,19 +23,20 @@ function App() {
       
       {/* Floating particles effect */}
       <div className="particles">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
             className="particle"
             animate={{
-              y: [-20, -100, -20],
-              x: [0, Math.random() * 100 - 50, 0],
-              opacity: [0, 1, 0],
+              y: [-10, -30, -10],
+              x: [0, Math.random() * 20 - 10, 0],
+              opacity: [0.2, 0.6, 0.2],
             }}
             transition={{
-              duration: Math.random() * 3 + 2,
+              duration: Math.random() * 4 + 6,
               repeat: Infinity,
-              delay: Math.random() * 2,
+              delay: Math.random() * 3,
+              ease: "easeInOut",
             }}
             style={{
               left: `${Math.random() * 100}%`,

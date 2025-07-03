@@ -44,9 +44,9 @@ const Education = () => {
               className="cyber-card education-card"
               variants={itemVariants}
               whileHover={{ 
-                scale: 1.03,
+                scale: 1.01,
                 borderColor: '#00ff41',
-                boxShadow: '0 0 30px rgba(0, 255, 65, 0.5)'
+                boxShadow: '0 0 20px rgba(0, 255, 65, 0.3)'
               }}
             >
               <div className="education-header">
