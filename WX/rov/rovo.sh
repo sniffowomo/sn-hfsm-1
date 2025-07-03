@@ -20,6 +20,8 @@ hea1() {
     echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
 }
 
+# ////////////////////////////////////// Rovo Section //////////////////////////////////////
+
 # Rovo Installaz
 # https://developer.atlassian.com/cloud/acli/guides/install-linux/
 
@@ -33,6 +35,14 @@ rov_i() {
     sudo apt update
     sudo apt install -y acli
 }
+
+rov_auth() {
+    hea1 "Authenticaing RovoCli"
+    co1="acli --help"
+    co2="acli rovodev auth login"
+}
+
+# ////////////////////////////////////// UV Section //////////////////////////////////////
 
 # UV Setup
 
