@@ -12,3 +12,8 @@
 
 1. Looks liek its made mosly for use with Jira ,
 2. But let u use otherwise
+3. Post installation , you will now , do some tests like makes sites and things
+
+# Diraz
+
+1. These re the working
