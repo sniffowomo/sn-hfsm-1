@@ -4,17 +4,11 @@
 
 # Notes
 
-|                                         Url                                         |               What               |
-| :---------------------------------------------------------------------------------: | :------------------------------: |
-|     [`api-gokens`](https://id.atlassian.com/manage-profile/security/api-tokens)     |   Make the api token for login   |
-| [`install-linux`](https://developer.atlassian.com/cloud/acli/guides/install-linux/) | Instructions to install in linux |
+|                                         Url                                         |                            What                             |
+| :---------------------------------------------------------------------------------: | :---------------------------------------------------------: |
+|     [`api-gokens`](https://id.atlassian.com/manage-profile/security/api-tokens)     |                Make the api token for login                 |
+| [`install-linux`](https://developer.atlassian.com/cloud/acli/guides/install-linux/) |              Instructions to install in linux               |
+|            [`dev-agents`](https://sniffowomo.atlassian.net/dev-agents/)             | Need to set this up for you org , then you can use rovo dev |
 
-- This is for getting the api
-
-https://developer.atlassian.com/cloud/acli/guides/install-linux/
-
-- This for the installation
-
-https://sniffowomo.atlassian.net/dev-agents/
-
-- You need to make a site which you dud
+1. Looks liek its made mosly for use with Jira ,
+2. But let u use otherwise
