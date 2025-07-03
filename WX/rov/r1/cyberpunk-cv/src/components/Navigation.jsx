@@ -55,7 +55,7 @@ const Navigation = () => {
           className="nav-logo"
           whileHover={{ scale: 1.05, color: '#00ffff' }}
         >
-          <span className="neon-text">AC</span>
+          <span className="neon-text">BS</span>
         </motion.div>
 
         {/* Desktop Navigation */}
