@@ -10,4 +10,5 @@
 |       Dir       |          What          |
 | :-------------: | :--------------------: |
 | [`gcc`](./gcc/) |   Gemini Cli Testing   |
-| [`hfx`](./hfx/) | HF SmolAgent LickSniff |
+| [`hfs`](./hfs/) | HF SmolAgent LickSniff |
+| [`rov`](./rov/) |     [`Rovo CLI`]()     |
