@@ -45,8 +45,11 @@ vol_exa() {
 
     # Github repo analyzer function
     # https://github.com/VoltAgent/voltagent/tree/main/examples/github-repo-analyzer
-    ghr() {}
-
+    ghr() {
+        pnpm create voltagent-app@latest -- --example github-repo-analyzer
+    }
+    echo -e "${GREEN}***** VoltAgent Example Completed *****${NC}"
+    ghr
 }
 
 # //// UV Setup ///
@@ -93,4 +96,5 @@ rm_venv_find() {
 # Execution
 # uv_gr
 # rm_venv_find
-vol_install
+# vol_install
+vol_exa
