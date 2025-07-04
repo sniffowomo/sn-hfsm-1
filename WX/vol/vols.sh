@@ -24,14 +24,15 @@ hea1() {
 vol_install() {
     hea1 "VoltAgent Installation"
     # Get Name of project
-    echo -e ""
+    echo -e "${YELLOW}✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦"
     echo -e "Enter the name of the project: "
+    echo -e "✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦${NC}"
     read name_of_project
     if [ -z "$name_of_project" ]; then
         echo -e "${RED}BASTARD ! Project name cannot be empty${NC}"
         exit 1
     fi
-    co1="bun create voltagent-app my-agent-app"
+    co1="bun create voltagent-app ${name_of_project}"
     echo -e "${GREEN}--- Executing ${co1} ---${NC}"
     eval "${co1}"
 }
@@ -78,5 +79,6 @@ rm_venv_find() {
 }
 
 # Execution
-uv_gr
+# uv_gr
 # rm_venv_find
+vol_install
