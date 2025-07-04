@@ -7,8 +7,9 @@
 
 # Dirza
 
-|       Dir       |          What          |
-| :-------------: | :--------------------: |
-| [`gcc`](./gcc/) |   Gemini Cli Testing   |
-| [`hfs`](./hfs/) | HF SmolAgent LickSniff |
-| [`rov`](./rov/) |     [`Rovo CLI`]()     |
+|       Dir       |                                    What                                    |
+| :-------------: | :------------------------------------------------------------------------: |
+| [`gcc`](./gcc/) |                             Gemini Cli Testing                             |
+| [`hfs`](./hfs/) |                           HF SmolAgent LickSniff                           |
+| [`rov`](./rov/) |                               [`Rovo CLI`]()                               |
+| [`vol`](./vol/) | [`VoltAgent`](https://voltagent.dev/docs/getting-started/mcp-docs-server/) |
