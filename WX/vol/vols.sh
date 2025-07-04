@@ -32,7 +32,7 @@ vol_install() {
         echo -e "${RED}BASTARD ! Project name cannot be empty${NC}"
         exit 1
     fi
-    co1="bun create voltagent-app ${name_of_project}"
+    co1="pnpm create voltagent-app ${name_of_project}"
     echo -e "${GREEN}--- Executing ${co1} ---${NC}"
     eval "${co1}"
 }
