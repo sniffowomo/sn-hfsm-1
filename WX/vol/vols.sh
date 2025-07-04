@@ -23,6 +23,7 @@ hea1() {
 
 vol_install() {
     hea1 "VoltAgent Installation"
+    co1=""
 
 }
 
