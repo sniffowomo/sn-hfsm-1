@@ -23,8 +23,17 @@ hea1() {
 
 vol_install() {
     hea1 "VoltAgent Installation"
-    co1=""
-
+    # Get Name of project
+    echo -e ""
+    echo -e "Enter the name of the project: "
+    read name_of_project
+    if [ -z "$name_of_project" ]; then
+        echo -e "${RED}BASTARD ! Project name cannot be empty${NC}"
+        exit 1
+    fi
+    co1="bun create voltagent-app my-agent-app"
+    echo -e "${GREEN}--- Executing ${co1} ---${NC}"
+    eval "${co1}"
 }
 
 # //// UV Setup ///
