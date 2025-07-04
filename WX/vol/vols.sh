@@ -19,7 +19,14 @@ hea1() {
     echo -e "${PURPLE}$1${NC}"
     echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
 }
-# UV Setup
+# /// VoltAgent Setup ///
+
+vol_install() {
+    hea1 "VoltAgent Installation"
+
+}
+
+# //// UV Setup ///
 
 uv_gr() {
     hea1 "UV Installation with gradio"
