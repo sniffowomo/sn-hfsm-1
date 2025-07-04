@@ -46,7 +46,7 @@ vol_exa() {
     # Github repo analyzer function
     # https://github.com/VoltAgent/voltagent/tree/main/examples/github-repo-analyzer
     ghr() {
-        pnpm create voltagent-app@latest -- --example github-repo-analyzer
+        pnpm create voltagent-app@latest github-repo-analyzer
     }
     echo -e "${GREEN}***** VoltAgent Example Completed *****${NC}"
     ghr
