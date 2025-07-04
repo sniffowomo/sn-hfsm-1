@@ -38,7 +38,16 @@ vol_install() {
 }
 
 # Volt example from repo
-#
+#https://github.com/voltagent/voltagent/tree/main/examples
+
+vol_exa() {
+    hea1 "VoltAgent Examples"
+
+    # Github repo analyzer function
+    # https://github.com/VoltAgent/voltagent/tree/main/examples/github-repo-analyzer
+    ghr() {}
+
+}
 
 # //// UV Setup ///
 
