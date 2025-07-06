@@ -31,7 +31,7 @@ qua_install() {
 qua_compress1() {
     hea1 "Quagga Compress"
     # Get name of the file
-    echo -e "Enter name of Output Text file"
+    echo -e "${PURPLE}Enter name of Output Text file - dir/file_name"
     read file_name
     if [ -z "$file_name" ]; then
         echo -e "${RED}BASTARD ! File name cannot be empty${NC}"
@@ -39,7 +39,7 @@ qua_compress1() {
     fi
 
     co1="quagga \
-    --max-total-size=100000000 \
+    --max-part-size=10000000000 \
     --output ${file_name}.txt"
     echo -e "--- Executing ${co1} ---"
     eval "${co1}"
