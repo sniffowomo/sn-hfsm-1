@@ -61,5 +61,5 @@ rm_venv_find() {
 }
 
 # Execution
-uv_gr
-# rm_venv_find
+# uv_gr
+rm_venv_find

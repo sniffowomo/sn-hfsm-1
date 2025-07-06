@@ -13,3 +13,4 @@
 | [`hfs`](./hfs/) |                           HF SmolAgent LickSniff                           |
 | [`rov`](./rov/) |                               [`Rovo CLI`]()                               |
 | [`vol`](./vol/) | [`VoltAgent`](https://voltagent.dev/docs/getting-started/mcp-docs-server/) |
+| [`tez`](./tez/) |                                   tests                                    |
