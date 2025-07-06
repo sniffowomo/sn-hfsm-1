@@ -39,8 +39,12 @@ qua_compress1() {
     fi
 
     co1="quagga \
-    --max-total-size 1000000 \
+    --max-total-size=100000000 \
     --output ${file_name}.txt"
     echo -e "--- Executing ${co1} ---"
     eval "${co1}"
 }
+
+# Execute
+qua_install
+qua_compress1
