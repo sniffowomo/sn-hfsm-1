@@ -1,0 +1,8 @@
+# Run security audit on  folder silo-contracts-v2 
+1. Find vulnerabilities in the code base 
+2. Search throuogh the already peformed audit reports pdf files and ignore those findings 
+3. Ensure that the vulnearbilties can be executed by an attacker and isnt a self attack of any kind
+4. Find vulnerabilities for which a poc can be made 
+5. Dont make shit up 
+6. Make a nice report in this folder , a markdown file , with the findings at the top in a nice table with severity level. 
+  - Report must have executable POC and not theoretical attacks
