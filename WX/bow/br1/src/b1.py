@@ -58,7 +58,7 @@ async def test_browser():
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
 
-        await page.goto("https://www.mnhes.com/")
+        await page.goto("https://www.femscat.com/")
         print(await page.title())
 
         # Wait 1 second (1000 milliseconds)
@@ -70,7 +70,7 @@ async def test_browser():
         await page.click("text=Enter")
 
         # Take a screenshot after clicking
-        await page.screenshot(path="example_after_click.png")
-        print("Screenshot saved as example_after_click.png")
+        await page.screenshot(path="ss/example_after_click.png")
+        rpr("Screenshot saved as example_after_click.png")
 
         await browser.close()
