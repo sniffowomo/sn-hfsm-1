@@ -52,10 +52,25 @@ async def b1():
 
 # /// Playqright Testing ///
 
+
 async def test_browser():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
-        await page.goto("https://www.meanbitches.com/")
+
+        await page.goto("https://www.mnhes.com/")
         print(await page.title())
+
+        # Wait 1 second (1000 milliseconds)
+        await page.wait_for_timeout(1000)
+
+        # Click the "Enter" button
+        # Use a selector that matches your site's button.
+        # For example, if it's <button>Enter</button>:
+        await page.click("text=Enter")
+
+        # Take a screenshot after clicking
+        await page.screenshot(path="example_after_click.png")
+        print("Screenshot saved as example_after_click.png")
+
         await browser.close()
