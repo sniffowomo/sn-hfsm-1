@@ -52,25 +52,26 @@ async def b1():
 
 # /// Playqright Testing ///
 
+WEBZ = "https://www.femscat.com/"
+
 
 async def test_browser():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
 
-        await page.goto("https://www.femscat.com/")
+        await page.goto(WEBZ)
         print(await page.title())
 
-        # Wait 1 second (1000 milliseconds)
+        # Wait 1 second
         await page.wait_for_timeout(1000)
 
-        # Click the "Enter" button
-        # Use a selector that matches your site's button.
-        # For example, if it's <button>Enter</button>:
-        await page.click("text=Enter")
+        # Click the <a> link with text "ENTER"
+        await page.click("a:has-text('ENTER')")
+        print("Clicked the ENTER link!")
 
-        # Take a screenshot after clicking
-        await page.screenshot(path="ss/example_after_click.png")
-        rpr("Screenshot saved as example_after_click.png")
+        # Take a screenshot after click
+        await page.screenshot(path="ss/example_after_enter.png")
+        print("Screenshot saved as example_after_enter.png")
 
         await browser.close()
