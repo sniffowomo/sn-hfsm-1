@@ -4,11 +4,11 @@
 
 # -- imports ---
 
-from browser_use.llm import ChatOpenAI
-from browser_use import Agent
 import asyncio
 import os
 
+from browser_use import Agent
+from browser_use.llm import ChatOpenAI
 from dotenv import load_dotenv
 from rich import print as rpr
 
@@ -23,7 +23,7 @@ NOV_T = os.getenv("NOV")
 
 
 def b1_main():
-    brint()
+    asyncio.run(b1())
 
 
 # ---sub functions ---
@@ -39,11 +39,10 @@ def brint():
 load_dotenv()
 
 
-async def main():
+async def b1():
+    he1("b1 agent")
     agent = Agent(
         task="Compare the price of gpt-4o and DeepSeek-V3",
         llm=ChatOpenAI(model="o4-mini", temperature=1.0),
     )
     await agent.run()
-
-asyncio.run(main())
