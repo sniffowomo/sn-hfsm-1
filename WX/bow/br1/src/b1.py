@@ -10,6 +10,7 @@ import os
 from browser_use import Agent
 from browser_use.llm import ChatOpenAI
 from dotenv import load_dotenv
+from playwright.async_api import async_playwright
 from rich import print as rpr
 
 from .utz import he1
@@ -23,7 +24,8 @@ NOV_T = os.getenv("NOV")
 
 
 def b1_main():
-    asyncio.run(b1())
+    # asyncio.run(b1())
+    asyncio.run(test_browser())
 
 
 # ---sub functions ---
@@ -46,3 +48,14 @@ async def b1():
         llm=ChatOpenAI(model="o4-mini", temperature=1.0),
     )
     await agent.run()
+
+
+# /// Playqright Testing ///
+
+async def test_browser():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto("https://example.com")
+        print(await page.title())
+        await browser.close()
