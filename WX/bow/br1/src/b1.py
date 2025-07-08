@@ -30,3 +30,5 @@ def b1_main():
 def brint():
     he1("Brintaz envz")
     rpr(NOV_T)
+
+# Exmaple Function 1
