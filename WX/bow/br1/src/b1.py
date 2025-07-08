@@ -59,16 +59,15 @@ async def test_browser():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
 
-        # Create a context that records video into "videos/" folder
+        # Use your existing folder — plain string works fine!
         context = await browser.new_context(
-            record_video_dir=Path("./videos"),
+            record_video_dir="ss",
             record_video_size={"width": 1280, "height": 720}
         )
 
-        # Create page from context
         page = await context.new_page()
 
-        await page.goto("https://www.mnhes.com/")
+        await page.goto(WEBZ)
         print(await page.title())
 
         await page.wait_for_timeout(1000)
@@ -76,15 +75,12 @@ async def test_browser():
         await page.click("a:has-text('ENTER')")
         print("Clicked the ENTER link!")
 
-        # Wait another second to capture the next state
         await page.wait_for_timeout(1000)
 
-        # Take final screenshot for good measure
-        await page.screenshot(path="example_after_enter.png")
+        await page.screenshot(path="ss/fs.png")
         print("Screenshot saved as example_after_enter.png")
 
-        # Close context — this finalizes the video
         await context.close()
         await browser.close()
 
-        print("Video saved in ./videos/ directory!")
+        rpr("Video saved in your videos/ folder!")
