@@ -56,6 +56,6 @@ async def test_browser():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
-        await page.goto("https://example.com")
+        await page.goto("https://www.meanbitches.com/")
         print(await page.title())
         await browser.close()
