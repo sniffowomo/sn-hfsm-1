@@ -14,3 +14,4 @@
 | [`rov`](./rov/) |                               [`Rovo CLI`]()                               |
 | [`vol`](./vol/) | [`VoltAgent`](https://voltagent.dev/docs/getting-started/mcp-docs-server/) |
 | [`tez`](./tez/) |                                   tests                                    |
+| [`bow`](./bow/) |                             Brwoser Use Tests                              |
