@@ -7,5 +7,6 @@
 
 # Dirz
 
-| Diz | Wha |
-| :-: | :-: |
+|      Diz      |               Wha               |
+| :-----------: | :-----------------------------: |
+| [`h1`](./h1/) | Testing out Groqy Compound Beta |
