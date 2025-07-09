@@ -46,7 +46,7 @@ async def b1():
     he1("b1 agent")
 
     browser_profile = BrowserProfile(
-        headless=False,
+        headless=True,
         allowed_domains=["google.com", "www.google.com"],
     )
 
@@ -73,7 +73,6 @@ async def b1():
         browser_session=browser_session,
         generate_gifs=True,  # Enable GIF generation
         use_vision=False,
-        page="www.google.com"
     )
 
     # Run the agent
