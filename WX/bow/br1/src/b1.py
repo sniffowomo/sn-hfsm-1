@@ -65,8 +65,7 @@ async def b1():
             "1. Go to duckduckgo.com\n"
             "2. Search for 'price comparison of GPT-4o and DeepSeek-V3'\n"
             "3. Extract the top 3 results and summarize prices\n"
-            "4. Take screenshots of the results\n"
-            "5. (Video will auto-record due to BrowserSession config)"
+
         ),
         llm=llm,
         browser_session=browser_session,
