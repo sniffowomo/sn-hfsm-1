@@ -8,7 +8,7 @@ import asyncio
 import os
 
 from browser_use import Agent, BrowserSession
-from browser_use.llm import ChatOpenAI
+from browser_use.llm import ChatOpenAI, ChatGroq
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
 from rich import print as rpr
@@ -18,6 +18,7 @@ from .utz import he1
 # --- Vars ---
 load_dotenv("src/.azz")
 NOV_T = os.getenv("NOV")
+GRQ_T = os.getenv("GRQ")
 
 
 # -- Main Function ----
@@ -50,10 +51,9 @@ async def b1():
     )
 
     # Configure Novita AI with Llama (adjust model name as per Novita's docs)
-    llm = ChatOpenAI(
-        base_url="https://api.novita.ai/v3",  # Novita AI endpoint
+    llm = ChatGroq(
         model="baidu/ernie-4.5-vl-28b-a3b",  # Use Novita's supported Llama variant
-        api_key=NOV_T,  # Replace with your key
+        api_key=GRQ_T,  # Replace with your key
         temperature=0.7,
     )
 
