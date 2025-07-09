@@ -50,11 +50,9 @@ async def b1():
         viewport={"width": 1280, "height": 720},
     )
 
-    # Configure Novita AI with Llama (adjust model name as per Novita's docs)
     llm = ChatOpenRouter(
-        # Use Novita's supported Llama variant
         model="tencent/hunyuan-a13b-instruct:free",
-        api_key=GRQ_T,  # Replace with your key
+        api_key=OPR_T,  # Replace with your key
         temperature=0.7,
     )
 
