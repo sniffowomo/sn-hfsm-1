@@ -52,6 +52,7 @@ async def b1():
 
     browser_profile = BrowserProfile(
         headless=True,
+        record_video_dir="ss",  # Directory to save videos
     )
 
     browser_session = BrowserSession(
