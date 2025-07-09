@@ -46,7 +46,7 @@ async def b1():
     he1("b1 agent")
 
     modelz = [
-        "moonshotai/kimi-vl-a3b-thinking:free"
+        "tngtech/deepseek-r1t2-chimera:free"
     ]
     model_choice = modelz[0]  # Select the first model
 
