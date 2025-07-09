@@ -62,7 +62,7 @@ async def b1():
     # Define the task
     agent = Agent(
         task=(
-            "1. Go to duckduckgo.com\n"
+            "1. In the adress bar, type 'https://www.bing.com'\n"
             "2. Search for 'price comparison of GPT-4o and DeepSeek-V3'\n"
             "3. Extract the top 3 results and summarize prices\n"
 
