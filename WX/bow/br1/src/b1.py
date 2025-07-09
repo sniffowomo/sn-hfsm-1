@@ -7,7 +7,7 @@
 import asyncio
 import os
 
-from browser_use import Agent, BrowserSession, BrowserProfile
+from browser_use import Agent, BrowserProfile, BrowserSession
 from browser_use.llm import ChatOpenRouter
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
@@ -72,7 +72,8 @@ async def b1():
         llm=llm,
         browser_session=browser_session,
         generate_gifs=True,  # Enable GIF generation
-        use_vision=False
+        use_vision=False,
+        page="www.google.com"
     )
 
     # Run the agent
