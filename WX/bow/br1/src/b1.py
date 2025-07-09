@@ -47,7 +47,6 @@ async def b1():
 
     browser_profile = BrowserProfile(
         headless=True,
-        allowed_domains=["google.com", "www.google.com"],
     )
 
     browser_session = BrowserSession(
@@ -63,7 +62,7 @@ async def b1():
     # Define the task
     agent = Agent(
         task=(
-            "1. Go to google.com\n"
+            "1. Go to duckduckgo.com\n"
             "2. Search for 'price comparison of GPT-4o and DeepSeek-V3'\n"
             "3. Extract the top 3 results and summarize prices\n"
             "4. Take screenshots of the results\n"
