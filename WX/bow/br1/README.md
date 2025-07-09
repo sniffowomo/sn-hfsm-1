@@ -17,3 +17,8 @@
 | [`gh1.py`](./src/gh1.py) |        GH AApi        |
 | [`gq1.py`](./src/gq1.py) |         Groq          |
 | [`no1.py`](./src/no1.py) |        Novita         |
+
+# Note regarding browser-use
+
+1. The open source version is prblematic with unclear documenation
+2. Taking too much time
