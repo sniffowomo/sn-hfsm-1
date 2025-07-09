@@ -52,6 +52,7 @@ async def b1():
 
     browser_profile = BrowserProfile(
         headless=True,
+        viewport={"width": 1280, "height": 720},
         record_video_dir="ss",  # Directory to save videos
     )
 
