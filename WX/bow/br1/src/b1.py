@@ -8,7 +8,7 @@ import asyncio
 import os
 
 from browser_use import Agent, BrowserSession
-from browser_use.llm import ChatGroq
+from browser_use.llm import ChatOpenRouter
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
 from rich import print as rpr
@@ -17,9 +17,9 @@ from .utz import he1
 
 # --- Vars ---
 load_dotenv("src/.azz")
-NOV_T = os.getenv("NOV")
-GRQ_T = os.getenv("GRQ")
-
+# NOV_T = os.getenv("NOV")
+# GRQ_T = os.getenv("GRQ")
+OPR_T = os.getenv("OPR")
 
 # -- Main Function ----
 
@@ -35,7 +35,7 @@ def b1_main():
 
 def brint():
     he1("Brintaz envz")
-    rpr(NOV_T)
+    rpr(OPR_T)
 
 
 # Exmaple Function 1
@@ -51,8 +51,9 @@ async def b1():
     )
 
     # Configure Novita AI with Llama (adjust model name as per Novita's docs)
-    llm = ChatGroq(
-        model="llama-3.3-70b-versatile",  # Use Novita's supported Llama variant
+    llm = ChatOpenRouter(
+        # Use Novita's supported Llama variant
+        model="tencent/hunyuan-a13b-instruct:free",
         api_key=GRQ_T,  # Replace with your key
         temperature=0.7,
     )
