@@ -148,7 +148,7 @@ async def test_browser_llm():
         initial_actions = [
             {
                 "go_to_url": {
-                    "url": "https://www.bing.com", 'new_tab': True,
+                    "url": "https://www.duckduckgo.com", 'new_tab': True,
                 }
             },
         ]
@@ -162,7 +162,9 @@ async def test_browser_llm():
         # Define the task
         agent = Agent(
             task=(
-                "type WANADA in search bar, find its meaning, and explain it in detail.\n"
+                "1. type WANADA in search bar, press enter, find its meaning, and explain it in detail.\n"
+                "2. If errors encountered , wait 5 seconds and terminate"
+
             ),
             llm=llm,
             use_vision=False,
