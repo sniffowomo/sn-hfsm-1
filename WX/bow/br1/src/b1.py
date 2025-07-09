@@ -51,9 +51,11 @@ async def b1():
     model_choice = modelz[0]  # Select the first model
 
     initial_actions = [
-        {"go to": {
-            "url": "https://www.bing.com"
-        }},
+        {
+            "go_to_url": {
+                "url": "https://www.bing.com", 'new_tab': True,
+            }
+        },
     ]
 
     browser_profile = BrowserProfile(
