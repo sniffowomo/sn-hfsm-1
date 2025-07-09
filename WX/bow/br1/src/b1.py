@@ -151,19 +151,15 @@ async def test_browser_llm():
             temperature=0.7,
         )
 
-    # Define the task
-    agent = Agent(
-        task=(
-            "1. go to https://www.duckduckgo.com\n"
-            "2. type WANADA in search bar\n "
-
-
-        ),
-        llm=llm,
-        browser_session=browser_session,
-        generate_gifs=True,  # Enable GIF generation
-        use_vision=False,
-    )
+        # Define the task
+        agent = Agent(
+            task=(
+                "type WANADA in search bar"
+            ),
+            llm=llm,
+            use_vision=False,
+        )
+        await agent.run()
 
     await context.close()
     await browser.close()
