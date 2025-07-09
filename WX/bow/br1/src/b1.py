@@ -145,6 +145,14 @@ async def test_browser_llm():
 
         page = await context.new_page()
 
+        initial_actions = [
+            {
+                "go_to_url": {
+                    "url": "https://www.bing.com", 'new_tab': True,
+                }
+            },
+        ]
+
         llm = ChatOpenRouter(
             model=model_choice,
             api_key=OPR_T,  # Replace with your key
@@ -158,6 +166,7 @@ async def test_browser_llm():
             ),
             llm=llm,
             use_vision=False,
+            initial_actions=initial_actions,
         )
         await agent.run()
 
