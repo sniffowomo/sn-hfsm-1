@@ -111,6 +111,7 @@ dependencies = [
     { name = "asyncio" },
     { name = "browser-use" },
     { name = "dotenv" },
+    { name = "openai" },
     { name = "rich" },
 ]
 
@@ -119,6 +120,7 @@ requires-dist = [
     { name = "asyncio", specifier = ">=3.4.3" },
     { name = "browser-use", specifier = ">=0.5.2" },
     { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "openai", specifier = ">=1.93.1" },
     { name = "rich", specifier = ">=14.0.0" },
 ]
 

@@ -4,14 +4,14 @@
 
 # --- Imports ---
 
-from src.b1 import b1_main
+from src.no1 import n1_main as no1_main
 from src.utz import eline, tline
 
 # --- App Code ---
 
 
 def buty():
-    b1_main()
+    no1_main()
 
 
 if __name__ == "__main__":

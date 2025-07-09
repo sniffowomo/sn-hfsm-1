@@ -7,7 +7,7 @@
 import asyncio
 import os
 
-from browser_use import Agent
+from browser_use import Agent, BrowserSession
 from browser_use.llm import ChatOpenAI
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
@@ -24,8 +24,8 @@ NOV_T = os.getenv("NOV")
 
 
 def b1_main():
-    # asyncio.run(b1())
-    asyncio.run(test_browser())
+    asyncio.run(b1())
+    # asyncio.run(test_browser())
 
 
 # ---sub functions ---
@@ -43,10 +43,44 @@ load_dotenv()
 
 async def b1():
     he1("b1 agent")
-    agent = Agent(
-        task="Compare the price of gpt-4o and DeepSeek-V3",
-        llm=ChatOpenAI(model="o4-mini", temperature=1.0),
+
+    browser_session = BrowserSession(
+        headless=True,  # Required for video recording
+        viewport={"width": 1280, "height": 720},
     )
+
+    # Configure Novita AI with Llama (adjust model name as per Novita's docs)
+    llm = ChatOpenAI(
+        base_url="https://api.novita.ai/v3",  # Novita AI endpoint
+        model="baidu/ernie-4.5-vl-28b-a3b",  # Use Novita's supported Llama variant
+        api_key=NOV_T,  # Replace with your key
+        temperature=0.7,
+    )
+
+    # Define the task
+    agent = Agent(
+        task=(
+            "1. Go to google.com\n"
+            "2. Search for 'price comparison of GPT-4o and DeepSeek-V3'\n"
+            "3. Extract the top 3 results and summarize prices\n"
+            "4. Take screenshots of the results\n"
+            "5. (Video will auto-record due to BrowserSession config)"
+        ),
+        llm=llm,
+        browser_session=browser_session,
+        generate_gifs=True,  # Enable GIF generation
+        generate_screenshots=True,  # Enable screenshot generation
+        generate_videos=True,  # Enable video recording
+        video_dir="videos",  # Directory to save videos
+        screenshot_dir="screenshots",  # Directory to save screenshots
+        gif_dir="gifs",  # Directory to save GIFs
+        verbose=True,  # Enable verbose output for debugging
+        max_steps=10,  # Limit the number of steps to avoid infinite loops
+        max_retries=3,  # Retry failed steps up to 3 times
+        retry_delay=2,  # Delay between retries in seconds
+    )
+
+    # Run the agent
     await agent.run()
 
 
