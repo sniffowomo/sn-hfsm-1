@@ -41,6 +41,9 @@ def brint():
 # Exmaple Function 1
 load_dotenv()
 
+# ---
+# Many problems wiht this function and doing this method
+
 
 async def b1():
     he1("b1 agent")
@@ -99,6 +102,37 @@ WEBZ = "https://www.femscat.com/"
 
 
 async def test_browser():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+
+        # Use your existing folder — plain string works fine!
+        context = await browser.new_context(
+            record_video_dir="ss",
+            record_video_size={"width": 1280, "height": 720}
+        )
+
+        page = await context.new_page()
+
+        await page.goto(WEBZ)
+        print(await page.title())
+
+        await page.wait_for_timeout(1000)
+
+        await page.click("a:has-text('ENTER')")
+        print("Clicked the ENTER link!")
+
+        await page.wait_for_timeout(1000)
+
+        await page.screenshot(path="ss/fs.png")
+        print("Screenshot saved as example_after_enter.png")
+
+        await context.close()
+        await browser.close()
+
+        rpr("Video saved in your videos/ folder!")
+
+
+async def test_browser_llm():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
 

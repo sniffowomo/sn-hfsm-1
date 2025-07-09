@@ -22,3 +22,4 @@
 
 1. The open source version is prblematic with unclear documenation
 2. Taking too much time
+3. Even thou
