@@ -7,7 +7,7 @@
 import asyncio
 import os
 
-from browser_use import Agent, BrowserSession
+from browser_use import Agent, BrowserSession, BrowserProfile
 from browser_use.llm import ChatOpenRouter
 from dotenv import load_dotenv
 from playwright.async_api import async_playwright
@@ -45,9 +45,13 @@ load_dotenv()
 async def b1():
     he1("b1 agent")
 
+    browser_profile = BrowserProfile(
+        headless=False,
+        allowed_domains=["google.com", "www.google.com"],
+    )
+
     browser_session = BrowserSession(
-        headless=True,  # Required for video recording
-        viewport={"width": 1280, "height": 720},
+        browser_profile=browser_profile,
     )
 
     llm = ChatOpenRouter(
@@ -69,7 +73,6 @@ async def b1():
         browser_session=browser_session,
         generate_gifs=True,  # Enable GIF generation
         use_vision=False
-
     )
 
     # Run the agent
