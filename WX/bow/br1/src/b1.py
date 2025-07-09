@@ -46,7 +46,7 @@ async def b1():
     he1("b1 agent")
 
     modelz = [
-        "meta-llama/llama-4-maverick-17b-128e-instruct:free"
+        "moonshotai/kimi-vl-a3b-thinking:free"
     ]
     model_choice = modelz[0]  # Select the first model
 
