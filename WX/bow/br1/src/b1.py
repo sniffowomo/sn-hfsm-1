@@ -50,6 +50,10 @@ async def b1():
     ]
     model_choice = modelz[0]  # Select the first model
 
+    initial_actions = {
+        "go to": "https://www.bing.com",
+    }
+
     browser_profile = BrowserProfile(
         headless=True,
         viewport={"width": 1280, "height": 720},
@@ -74,6 +78,7 @@ async def b1():
             "3. Extract the top 3 results and summarize prices\n"
 
         ),
+        initial_actions=initial_actions,
         llm=llm,
         browser_session=browser_session,
         generate_gifs=True,  # Enable GIF generation
