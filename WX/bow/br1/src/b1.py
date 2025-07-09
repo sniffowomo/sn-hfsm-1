@@ -44,13 +44,14 @@ load_dotenv()
 # ---
 # Many problems wiht this function and doing this method
 
+modelz = [
+    "tngtech/deepseek-r1t2-chimera:free"
+]
+
 
 async def b1():
     he1("b1 agent")
 
-    modelz = [
-        "tngtech/deepseek-r1t2-chimera:free"
-    ]
     model_choice = modelz[0]  # Select the first model
 
     initial_actions = [
@@ -144,20 +145,27 @@ async def test_browser_llm():
 
         page = await context.new_page()
 
-        await page.goto(WEBZ)
-        print(await page.title())
+        llm = ChatOpenRouter(
+            model=model_choice,
+            api_key=OPR_T,  # Replace with your key
+            temperature=0.7,
+        )
 
-        await page.wait_for_timeout(1000)
+    # Define the task
+    agent = Agent(
+        task=(
+            "1. go to https://www.duckduckgo.com\n"
+            "2. type WANADA in search bar\n "
 
-        await page.click("a:has-text('ENTER')")
-        print("Clicked the ENTER link!")
 
-        await page.wait_for_timeout(1000)
+        ),
+        llm=llm,
+        browser_session=browser_session,
+        generate_gifs=True,  # Enable GIF generation
+        use_vision=False,
+    )
 
-        await page.screenshot(path="ss/fs.png")
-        print("Screenshot saved as example_after_enter.png")
+    await context.close()
+    await browser.close()
 
-        await context.close()
-        await browser.close()
-
-        rpr("Video saved in your videos/ folder!")
+    rpr("Video saved in your videos/ folder!")
