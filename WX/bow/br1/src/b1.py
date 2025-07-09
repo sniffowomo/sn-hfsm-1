@@ -69,15 +69,8 @@ async def b1():
         llm=llm,
         browser_session=browser_session,
         generate_gifs=True,  # Enable GIF generation
-        generate_screenshots=True,  # Enable screenshot generation
-        generate_videos=True,  # Enable video recording
-        video_dir="videos",  # Directory to save videos
-        screenshot_dir="screenshots",  # Directory to save screenshots
-        gif_dir="gifs",  # Directory to save GIFs
-        verbose=True,  # Enable verbose output for debugging
-        max_steps=10,  # Limit the number of steps to avoid infinite loops
-        max_retries=3,  # Retry failed steps up to 3 times
-        retry_delay=2,  # Delay between retries in seconds
+        use_vision=False
+
     )
 
     # Run the agent
