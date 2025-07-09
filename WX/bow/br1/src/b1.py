@@ -25,8 +25,9 @@ OPR_T = os.getenv("OPR")
 
 
 def b1_main():
-    asyncio.run(b1())
+    # asyncio.run(b1())
     # asyncio.run(test_browser())
+    asyncio.run(test_browser_llm())
 
 
 # ---sub functions ---
@@ -47,12 +48,11 @@ load_dotenv()
 modelz = [
     "tngtech/deepseek-r1t2-chimera:free"
 ]
+model_choice = modelz[0]  # Select the first model
 
 
 async def b1():
     he1("b1 agent")
-
-    model_choice = modelz[0]  # Select the first model
 
     initial_actions = [
         {
@@ -154,7 +154,7 @@ async def test_browser_llm():
         # Define the task
         agent = Agent(
             task=(
-                "type WANADA in search bar"
+                "type WANADA in search bar, find its meaning, and explain it in detail.\n"
             ),
             llm=llm,
             use_vision=False,
