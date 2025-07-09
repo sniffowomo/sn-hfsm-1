@@ -51,7 +51,7 @@ async def b1():
     )
 
     llm = ChatOpenRouter(
-        model="tencent/hunyuan-a13b-instruct:free",
+        model="deepseek/deepseek-r1-0528-qwen3-8b:free",
         api_key=OPR_T,  # Replace with your key
         temperature=0.7,
     )
