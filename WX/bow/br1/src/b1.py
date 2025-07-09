@@ -45,6 +45,11 @@ load_dotenv()
 async def b1():
     he1("b1 agent")
 
+    modelz = [
+        "mistralai/mistral-small-3.2-24b-instruct:free"
+    ]
+    model_choice = modelz[0]  # Select the first model
+
     browser_profile = BrowserProfile(
         headless=True,
     )
@@ -54,7 +59,7 @@ async def b1():
     )
 
     llm = ChatOpenRouter(
-        model="deepseek/deepseek-r1-0528-qwen3-8b:free",
+        model=model_choice,
         api_key=OPR_T,  # Replace with your key
         temperature=0.7,
     )
